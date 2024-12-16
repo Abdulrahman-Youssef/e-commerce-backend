@@ -23,7 +23,7 @@ function getAllData($table, $where = null, $values = null , $json = true)
         if ($count > 0){
             echo json_encode(array("status" => "success", "data" => $data));
         } else {
-            echo json_encode(array("status" => "failure"));
+           printFailuer("there is no data found");
         }
         return $count;
 }else {

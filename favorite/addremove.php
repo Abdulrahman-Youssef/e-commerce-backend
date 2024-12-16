@@ -1,6 +1,6 @@
 <?php 
 
-include("connect.php");
+include("../connect.php");
 
 $userid =  filterRequest("userid");
 $itemid =  filterRequest("itemid");
@@ -21,8 +21,6 @@ $itemid =  filterRequest("itemid");
       deleteData("favorite","favorite_userid  = $userid AND favorite_itemid = $itemid ");
    }
  else{
-   
-
  insertData("favorite",$data);
 }
 

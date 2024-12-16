@@ -16,7 +16,7 @@ $password = sha1($_POST["password"]);
 
 
 
-getData("users", "users_email  = ? AND users_password	= ? AND users_approve = 1", $data = array(
+getData("users", "users_email  = ? AND users_password	= ?", $data = array(
     $email,
    $password,
 ) );
