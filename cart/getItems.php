@@ -4,6 +4,7 @@ include("../connect.php");
 
 $userid  = filterRequest("userid");
 
+
 $stmt = $con->prepare("SELECT * FROM cart_items_view WHERE cart_user_id	= ?");
 
 $stmt->execute(array($userid));

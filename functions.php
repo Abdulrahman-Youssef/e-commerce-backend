@@ -92,9 +92,9 @@ function updateData($table, $data, $where, $json = true)
     $count = $stmt->rowCount();
     if ($json == true) {
     if ($count > 0) {
-        echo json_encode(array("status" => "success" ));
+        printSuccess("updated");
     } else {
-        echo json_encode(array("status" => "failure"));
+        printFailuer("not uddated");
     }
     }
     return $count;
